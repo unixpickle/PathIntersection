@@ -9,17 +9,17 @@ Although pixel-by-pixel collision detection is not the most efficient method, it
 Given two CGPathRef variables, `lastPath` and `currentPath`, you could detect if and where they intersect as follows:
 
     ANPathBitmap * bm1 = [[ANPathBitmap alloc] initWithPath:lastPath];
-  	ANPathBitmap * bm2 = [[ANPathBitmap alloc] initWithPath:currentPath];
-	  bm1.lineCap = kCGLineCapRound;
-		bm2.lineCap = kCGLineCapRound;
-		bm1.lineThickness = 4;
-		bm2.lineThickness = 4;
-		[bm1 generateBitmap];
-		[bm2 generateBitmap];
+    ANPathBitmap * bm2 = [[ANPathBitmap alloc] initWithPath:currentPath];
+    bm1.lineCap = kCGLineCapRound;
+    bm2.lineCap = kCGLineCapRound;
+    bm1.lineThickness = 4;
+    bm2.lineThickness = 4;
+    [bm1 generateBitmap];
+    [bm2 generateBitmap];
     CGPoint intPoint;
-		ANPathIntersection * intersection = [[ANPathIntersection alloc] initWithPathBitmap:bm1
+    ANPathIntersection * intersection = [[ANPathIntersection alloc] initWithPathBitmap:bm1
                                                                            anotherPath:bm2];
-		if ([intersection pathLinesIntersect:&intPoint]) {
+    if ([intersection pathLinesIntersect:&intPoint]) {
         NSLog(@"Point: %@", NSStringFromCGPoint(intPoint));
     } else {
         NSLog(@"No intersection");
