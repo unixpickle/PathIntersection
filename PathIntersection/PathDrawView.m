@@ -33,6 +33,8 @@
 - (void)addPoint:(CGPoint)aPoint {
 	intPoint = CGPointZero;
 	if (shouldClear) {
+		CGPathRelease(currentPath);
+		CGPathRelease(lastPath);
 		lastPath = NULL;
 		currentPath = NULL;
 		shouldClear = NO;
@@ -71,6 +73,8 @@
 		} else {
 			[label setText:@"No Intersection"];
 			intPoint = CGPointZero;
+			CGPathRelease(currentPath);
+			CGPathRelease(lastPath);
 			lastPath = NULL;
 			currentPath = NULL;
 			[self setNeedsDisplay];
@@ -99,6 +103,15 @@
 	if (shouldClear) {
 		CGContextSetRGBStrokeColor(context, 1, 0, 0, 1);
 		CGContextStrokeEllipseInRect(context, CGRectMake(intPoint.x - 3, intPoint.y - 3, 6, 6));
+	}
+}
+
+- (void)dealloc {
+	if (currentPath) {
+		CGPathRelease(currentPath);
+	}
+	if (lastPath) {
+		CGPathRelease(lastPath);
 	}
 }
 
