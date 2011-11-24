@@ -13,6 +13,20 @@
 		FA0B4375147DD0DA00C2DD50 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FA0B4373147DD0DA00C2DD50 /* InfoPlist.strings */; };
 		FA0B4377147DD0DA00C2DD50 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FA0B4376147DD0DA00C2DD50 /* main.m */; };
 		FA0B437B147DD0DA00C2DD50 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FA0B437A147DD0DA00C2DD50 /* AppDelegate.m */; };
+		FA0B43A0147DD11A00C2DD50 /* ANImageBitmapRep.m in Sources */ = {isa = PBXBuildFile; fileRef = FA0B4388147DD11A00C2DD50 /* ANImageBitmapRep.m */; };
+		FA0B43A1147DD11A00C2DD50 /* BitmapContextRep.m in Sources */ = {isa = PBXBuildFile; fileRef = FA0B438A147DD11A00C2DD50 /* BitmapContextRep.m */; };
+		FA0B43A2147DD11A00C2DD50 /* NSImage+ANImageBitmapRep.m in Sources */ = {isa = PBXBuildFile; fileRef = FA0B438D147DD11A00C2DD50 /* NSImage+ANImageBitmapRep.m */; };
+		FA0B43A3147DD11A00C2DD50 /* OSCommonImage.m in Sources */ = {isa = PBXBuildFile; fileRef = FA0B438F147DD11A00C2DD50 /* OSCommonImage.m */; };
+		FA0B43A4147DD11A00C2DD50 /* UIImage+ANImageBitmapRep.m in Sources */ = {isa = PBXBuildFile; fileRef = FA0B4391147DD11A00C2DD50 /* UIImage+ANImageBitmapRep.m */; };
+		FA0B43A5147DD11A00C2DD50 /* CGContextCreator.m in Sources */ = {isa = PBXBuildFile; fileRef = FA0B4394147DD11A00C2DD50 /* CGContextCreator.m */; };
+		FA0B43A6147DD11A00C2DD50 /* CGImageContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = FA0B4396147DD11A00C2DD50 /* CGImageContainer.m */; };
+		FA0B43A7147DD11A00C2DD50 /* BitmapContextManipulator.m in Sources */ = {isa = PBXBuildFile; fileRef = FA0B4399147DD11A00C2DD50 /* BitmapContextManipulator.m */; };
+		FA0B43A8147DD11A00C2DD50 /* BitmapCropManipulator.m in Sources */ = {isa = PBXBuildFile; fileRef = FA0B439B147DD11A00C2DD50 /* BitmapCropManipulator.m */; };
+		FA0B43A9147DD11A00C2DD50 /* BitmapRotationManipulator.m in Sources */ = {isa = PBXBuildFile; fileRef = FA0B439D147DD11A00C2DD50 /* BitmapRotationManipulator.m */; };
+		FA0B43AA147DD11A00C2DD50 /* BitmapScaleManipulator.m in Sources */ = {isa = PBXBuildFile; fileRef = FA0B439F147DD11A00C2DD50 /* BitmapScaleManipulator.m */; };
+		FA0B43AE147DD2B700C2DD50 /* ANPathBitmap.m in Sources */ = {isa = PBXBuildFile; fileRef = FA0B43AD147DD2B700C2DD50 /* ANPathBitmap.m */; };
+		FA0B43B1147DD5D500C2DD50 /* ANPathIntersection.m in Sources */ = {isa = PBXBuildFile; fileRef = FA0B43B0147DD5D500C2DD50 /* ANPathIntersection.m */; };
+		FA0B43B4147DD82F00C2DD50 /* PathDrawView.m in Sources */ = {isa = PBXBuildFile; fileRef = FA0B43B3147DD82F00C2DD50 /* PathDrawView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,12 +34,40 @@
 		FA0B436A147DD0DA00C2DD50 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		FA0B436C147DD0DA00C2DD50 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		FA0B436E147DD0DA00C2DD50 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		FA0B4372147DD0DA00C2DD50 /* PathIntersection-Info.plist */ = {isa = PBXFileReference; path = "PathIntersection-Info.plist"; sourceTree = "<group>"; };
+		FA0B4372147DD0DA00C2DD50 /* PathIntersection-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PathIntersection-Info.plist"; sourceTree = "<group>"; };
 		FA0B4374147DD0DA00C2DD50 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		FA0B4376147DD0DA00C2DD50 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		FA0B4378147DD0DA00C2DD50 /* PathIntersection-Prefix.pch */ = {isa = PBXFileReference; path = "PathIntersection-Prefix.pch"; sourceTree = "<group>"; };
-		FA0B4379147DD0DA00C2DD50 /* AppDelegate.h */ = {isa = PBXFileReference; path = AppDelegate.h; sourceTree = "<group>"; };
+		FA0B4378147DD0DA00C2DD50 /* PathIntersection-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PathIntersection-Prefix.pch"; sourceTree = "<group>"; };
+		FA0B4379147DD0DA00C2DD50 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		FA0B437A147DD0DA00C2DD50 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		FA0B4387147DD11A00C2DD50 /* ANImageBitmapRep.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANImageBitmapRep.h; sourceTree = "<group>"; };
+		FA0B4388147DD11A00C2DD50 /* ANImageBitmapRep.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ANImageBitmapRep.m; sourceTree = "<group>"; };
+		FA0B4389147DD11A00C2DD50 /* BitmapContextRep.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BitmapContextRep.h; sourceTree = "<group>"; };
+		FA0B438A147DD11A00C2DD50 /* BitmapContextRep.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BitmapContextRep.m; sourceTree = "<group>"; };
+		FA0B438C147DD11A00C2DD50 /* NSImage+ANImageBitmapRep.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSImage+ANImageBitmapRep.h"; sourceTree = "<group>"; };
+		FA0B438D147DD11A00C2DD50 /* NSImage+ANImageBitmapRep.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSImage+ANImageBitmapRep.m"; sourceTree = "<group>"; };
+		FA0B438E147DD11A00C2DD50 /* OSCommonImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OSCommonImage.h; sourceTree = "<group>"; };
+		FA0B438F147DD11A00C2DD50 /* OSCommonImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OSCommonImage.m; sourceTree = "<group>"; };
+		FA0B4390147DD11A00C2DD50 /* UIImage+ANImageBitmapRep.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ANImageBitmapRep.h"; sourceTree = "<group>"; };
+		FA0B4391147DD11A00C2DD50 /* UIImage+ANImageBitmapRep.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ANImageBitmapRep.m"; sourceTree = "<group>"; };
+		FA0B4393147DD11A00C2DD50 /* CGContextCreator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGContextCreator.h; sourceTree = "<group>"; };
+		FA0B4394147DD11A00C2DD50 /* CGContextCreator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CGContextCreator.m; sourceTree = "<group>"; };
+		FA0B4395147DD11A00C2DD50 /* CGImageContainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGImageContainer.h; sourceTree = "<group>"; };
+		FA0B4396147DD11A00C2DD50 /* CGImageContainer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CGImageContainer.m; sourceTree = "<group>"; };
+		FA0B4398147DD11A00C2DD50 /* BitmapContextManipulator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BitmapContextManipulator.h; sourceTree = "<group>"; };
+		FA0B4399147DD11A00C2DD50 /* BitmapContextManipulator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BitmapContextManipulator.m; sourceTree = "<group>"; };
+		FA0B439A147DD11A00C2DD50 /* BitmapCropManipulator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BitmapCropManipulator.h; sourceTree = "<group>"; };
+		FA0B439B147DD11A00C2DD50 /* BitmapCropManipulator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BitmapCropManipulator.m; sourceTree = "<group>"; };
+		FA0B439C147DD11A00C2DD50 /* BitmapRotationManipulator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BitmapRotationManipulator.h; sourceTree = "<group>"; };
+		FA0B439D147DD11A00C2DD50 /* BitmapRotationManipulator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BitmapRotationManipulator.m; sourceTree = "<group>"; };
+		FA0B439E147DD11A00C2DD50 /* BitmapScaleManipulator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BitmapScaleManipulator.h; sourceTree = "<group>"; };
+		FA0B439F147DD11A00C2DD50 /* BitmapScaleManipulator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BitmapScaleManipulator.m; sourceTree = "<group>"; };
+		FA0B43AC147DD2B700C2DD50 /* ANPathBitmap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANPathBitmap.h; sourceTree = "<group>"; };
+		FA0B43AD147DD2B700C2DD50 /* ANPathBitmap.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ANPathBitmap.m; sourceTree = "<group>"; };
+		FA0B43AF147DD5D500C2DD50 /* ANPathIntersection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANPathIntersection.h; sourceTree = "<group>"; };
+		FA0B43B0147DD5D500C2DD50 /* ANPathIntersection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ANPathIntersection.m; sourceTree = "<group>"; };
+		FA0B43B2147DD82F00C2DD50 /* PathDrawView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PathDrawView.h; sourceTree = "<group>"; };
+		FA0B43B3147DD82F00C2DD50 /* PathDrawView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PathDrawView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +87,8 @@
 		FA0B435B147DD0DA00C2DD50 = {
 			isa = PBXGroup;
 			children = (
+				FA0B43AB147DD17C00C2DD50 /* CGPathIntersection */,
+				FA0B4386147DD11A00C2DD50 /* ANImageBitmapRep */,
 				FA0B4370147DD0DA00C2DD50 /* PathIntersection */,
 				FA0B4369147DD0DA00C2DD50 /* Frameworks */,
 				FA0B4367147DD0DA00C2DD50 /* Products */,
@@ -74,6 +118,8 @@
 			children = (
 				FA0B4379147DD0DA00C2DD50 /* AppDelegate.h */,
 				FA0B437A147DD0DA00C2DD50 /* AppDelegate.m */,
+				FA0B43B2147DD82F00C2DD50 /* PathDrawView.h */,
+				FA0B43B3147DD82F00C2DD50 /* PathDrawView.m */,
 				FA0B4371147DD0DA00C2DD50 /* Supporting Files */,
 			);
 			path = PathIntersection;
@@ -88,6 +134,70 @@
 				FA0B4378147DD0DA00C2DD50 /* PathIntersection-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FA0B4386147DD11A00C2DD50 /* ANImageBitmapRep */ = {
+			isa = PBXGroup;
+			children = (
+				FA0B4387147DD11A00C2DD50 /* ANImageBitmapRep.h */,
+				FA0B4388147DD11A00C2DD50 /* ANImageBitmapRep.m */,
+				FA0B4389147DD11A00C2DD50 /* BitmapContextRep.h */,
+				FA0B438A147DD11A00C2DD50 /* BitmapContextRep.m */,
+				FA0B438B147DD11A00C2DD50 /* Compatibility */,
+				FA0B4392147DD11A00C2DD50 /* CoreGraphics */,
+				FA0B4397147DD11A00C2DD50 /* Manipulators */,
+			);
+			path = ANImageBitmapRep;
+			sourceTree = "<group>";
+		};
+		FA0B438B147DD11A00C2DD50 /* Compatibility */ = {
+			isa = PBXGroup;
+			children = (
+				FA0B438C147DD11A00C2DD50 /* NSImage+ANImageBitmapRep.h */,
+				FA0B438D147DD11A00C2DD50 /* NSImage+ANImageBitmapRep.m */,
+				FA0B438E147DD11A00C2DD50 /* OSCommonImage.h */,
+				FA0B438F147DD11A00C2DD50 /* OSCommonImage.m */,
+				FA0B4390147DD11A00C2DD50 /* UIImage+ANImageBitmapRep.h */,
+				FA0B4391147DD11A00C2DD50 /* UIImage+ANImageBitmapRep.m */,
+			);
+			path = Compatibility;
+			sourceTree = "<group>";
+		};
+		FA0B4392147DD11A00C2DD50 /* CoreGraphics */ = {
+			isa = PBXGroup;
+			children = (
+				FA0B4393147DD11A00C2DD50 /* CGContextCreator.h */,
+				FA0B4394147DD11A00C2DD50 /* CGContextCreator.m */,
+				FA0B4395147DD11A00C2DD50 /* CGImageContainer.h */,
+				FA0B4396147DD11A00C2DD50 /* CGImageContainer.m */,
+			);
+			path = CoreGraphics;
+			sourceTree = "<group>";
+		};
+		FA0B4397147DD11A00C2DD50 /* Manipulators */ = {
+			isa = PBXGroup;
+			children = (
+				FA0B4398147DD11A00C2DD50 /* BitmapContextManipulator.h */,
+				FA0B4399147DD11A00C2DD50 /* BitmapContextManipulator.m */,
+				FA0B439A147DD11A00C2DD50 /* BitmapCropManipulator.h */,
+				FA0B439B147DD11A00C2DD50 /* BitmapCropManipulator.m */,
+				FA0B439C147DD11A00C2DD50 /* BitmapRotationManipulator.h */,
+				FA0B439D147DD11A00C2DD50 /* BitmapRotationManipulator.m */,
+				FA0B439E147DD11A00C2DD50 /* BitmapScaleManipulator.h */,
+				FA0B439F147DD11A00C2DD50 /* BitmapScaleManipulator.m */,
+			);
+			path = Manipulators;
+			sourceTree = "<group>";
+		};
+		FA0B43AB147DD17C00C2DD50 /* CGPathIntersection */ = {
+			isa = PBXGroup;
+			children = (
+				FA0B43AC147DD2B700C2DD50 /* ANPathBitmap.h */,
+				FA0B43AD147DD2B700C2DD50 /* ANPathBitmap.m */,
+				FA0B43AF147DD5D500C2DD50 /* ANPathIntersection.h */,
+				FA0B43B0147DD5D500C2DD50 /* ANPathIntersection.m */,
+			);
+			path = CGPathIntersection;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -153,6 +263,20 @@
 			files = (
 				FA0B4377147DD0DA00C2DD50 /* main.m in Sources */,
 				FA0B437B147DD0DA00C2DD50 /* AppDelegate.m in Sources */,
+				FA0B43A0147DD11A00C2DD50 /* ANImageBitmapRep.m in Sources */,
+				FA0B43A1147DD11A00C2DD50 /* BitmapContextRep.m in Sources */,
+				FA0B43A2147DD11A00C2DD50 /* NSImage+ANImageBitmapRep.m in Sources */,
+				FA0B43A3147DD11A00C2DD50 /* OSCommonImage.m in Sources */,
+				FA0B43A4147DD11A00C2DD50 /* UIImage+ANImageBitmapRep.m in Sources */,
+				FA0B43A5147DD11A00C2DD50 /* CGContextCreator.m in Sources */,
+				FA0B43A6147DD11A00C2DD50 /* CGImageContainer.m in Sources */,
+				FA0B43A7147DD11A00C2DD50 /* BitmapContextManipulator.m in Sources */,
+				FA0B43A8147DD11A00C2DD50 /* BitmapCropManipulator.m in Sources */,
+				FA0B43A9147DD11A00C2DD50 /* BitmapRotationManipulator.m in Sources */,
+				FA0B43AA147DD11A00C2DD50 /* BitmapScaleManipulator.m in Sources */,
+				FA0B43AE147DD2B700C2DD50 /* ANPathBitmap.m in Sources */,
+				FA0B43B1147DD5D500C2DD50 /* ANPathIntersection.m in Sources */,
+				FA0B43B4147DD82F00C2DD50 /* PathDrawView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
