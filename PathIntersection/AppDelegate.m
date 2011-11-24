@@ -19,7 +19,9 @@
     [self.window makeKeyAndVisible];
 	
 	PathDrawView * drawView = [[PathDrawView alloc] initWithFrame:self.window.bounds];
-	[self.window addSubview:drawView];
+	UIViewController * controller = [[UIViewController alloc] init];
+	controller.view = drawView;
+	[self.window addSubview:controller.view];
 	
     return YES;
 }
